@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    position: absolute;
+    font-family: 'Roboto Slab', serif;
+    overflow: hidden;
+}
+
+
+h1{
+    position: relative;
+right: -40%;
+margin: 2px 3px;
+padding: 3px 4px;
+    
+}
+#navbar
+{
+    height: 10vh;
+    width: 100%;
+    /* border: 2px solid thistle; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+    background: linear-gradient(to right, black , rgb(75, 68, 68));
+    color: #fff;
+}
+#Search{
+    border-radius: 5px;
+    margin : 10px 12px;
+    padding: 2px 15px;
+}
+
+#tech-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    width: 100%;
+    /* border: 2px solid red; */
+    background: linear-gradient(to right , black , red);
+    color: #fff;
+    
+}
+#tech-container h2{
+    position: absolute;
+    /* right:2%; */
+    font-size: 2rem;
+    top:1%;
+}
+
+#tech-container ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 2px 25px;
+}
+#tech-container li a{
+    padding: 3px 5px;
+    text-decoration: none;
+    color: rgb(184, 240, 71);
+    font-size: 1.5rem;
+    transition: 0.5s all ease ;
+}
+
+#tech-container li a:hover{
+    color:whitesmoke;
+}
+
+#apti-container{
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh; 
+    width: 100%;
+    /* border: 2px solid red; */
+    background: linear-gradient(to right , black , red);
+    color: #fff;
+}
+#apti-container h2{
+    position: absolute;
+    /* right:2%; */
+    font-size: 2rem;
+    top:5%;
+}
+
+#apti-container ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 2px 25px ;
+}
+#apti-container li a{
+    padding: 3px 5px;
+    text-decoration: none;
+  color: rgb(184, 240, 71);;
+    font-size: 1.5rem;
+    transition: 0.5s all ease ;
+}
+
+#apti-container li a:hover{
+    color:whitesmoke;
+}
+
+
+#preloader{
+    background: #515781 url(giphy.gif) center center no-repeat;
+    background-size: 20%;
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (min-width:200px ) and (max-width:700px){
+    body{
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    
+
+    h1{
+        position: relative;
+    right: -10%;
+    margin: 2px 3px;
+    padding: 3px 4px;
+        
+    }
+
+    #preloader{
+        background: #515781 url(giphy.gif) center center no-repeat;
+        background-size: 50%;
+        position: fixed;
+        z-index: 999;
+        height: 100vh;
+        width: 100%;
+    }
+}
